@@ -1,22 +1,23 @@
 {
   "name": "formio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "parcel public/index.html --open",
-    "build": "parcel build public/index.html"
+    "build": "parcel build public/index.html",
+    "lint": "eslint src/**/*.{js,jsx}"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "git": "^0.1.5",
+    "lint": "^0.8.19",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "parcel": "^2.15.4"
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.3.0",
+    "parcel": "^2.15.4",
+    "typescript-eslint": "^8.38.0"
   }
 }
